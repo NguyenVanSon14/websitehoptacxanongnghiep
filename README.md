@@ -238,5 +238,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Liên hệ
 
-- Email: support@htx-agri.com
-- Website: https://htx-agri.com
+- Email: be.nguyenvanson@gmail.com
