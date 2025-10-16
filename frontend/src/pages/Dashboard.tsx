@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout/Layout';
+
 import { 
   UsersIcon, 
   CubeIcon, 
   CurrencyDollarIcon, 
   DocumentTextIcon,
-  TrendingUpIcon,
-  TrendingDownIcon
+  ArrowTrendingUpIcon,
+  ArrowTrendingDownIcon
 } from '@heroicons/react/24/outline';
 import { dashboardApi } from '../services/api';
 import { DashboardStats } from '../types';
@@ -115,9 +116,9 @@ const Dashboard: React.FC = () => {
               <div className="mt-4">
                 <div className="flex items-center text-sm">
                   {card.changeType === 'increase' ? (
-                    <TrendingUpIcon className="h-4 w-4 text-green-500 mr-1" />
+                    <ArrowTrendingUpIcon className="h-4 w-4 text-green-500 mr-1" />
                   ) : (
-                    <TrendingDownIcon className="h-4 w-4 text-red-500 mr-1" />
+                    <ArrowTrendingUpIcon className="h-4 w-4 text-red-500 mr-1" />
                   )}
                   <span className={`font-medium ${
                     card.changeType === 'increase' ? 'text-green-600' : 'text-red-600'
